@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8"/>
+		<title> examen </title>
+
+		<meta name="viewporte" content="width=divice-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimun-scale=1">
+		<link href="https://file.myfontastic.com/MwQVUtdQQnbeMSzvSnzfdY/icons.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/estilo.css">
+
+		<link href="https://fonts.googleapis.com/css?family=Lato|Merriweather|Open+Sans" rel="stylestheet">
+		  <title>Matrices
+
+</title>
+
+   <script >
+
+     var a=new Array(3);b=new Array(3);c=new Array(3)
+
+     function producto()
+
+     {
+
+      for(i=1;i<=3;i++)
+
+       {   a[i]=[0,0,0,0];b[i]= [0,0,0,0];c[i]= [0,0,0,0]
+
+            for(j=1;j<=3;j++)
+
+             {  a[i][j]=parseFloat(document.matriza[3*i+j-4].value)
+
+                 b[i][j]=parseFloat(document.matrizb[3*i+j-4].value)    }    }
+
+      for(i=1;i<=3;i++)
+
+       {   for(j=1;j<=3;j++)
+
+              { c[i][j]=0
+
+                     for(k=1;k<=3;k++)
+
+                       {c[i][j]=a[i][j]-b[i][j]  }
+
+                document.matrizc[3*i+j-4].value=c[i][j]  }    }
+
+      }
+
+    </script>
+  <script >
+
+     var a=new Array(3);b=new Array(3);d=new Array(3)
+
+     function producto2()
+
+     {
+
+      for(i=1;i<=3;i++)
+
+       {   a[i]=[0,0,0,0];b[i]= [0,0,0,0];d[i]= [0,0,0,0]
+
+            for(j=1;j<=3;j++)
+
+             {  a[i][j]=parseFloat(document.matriza[3*i+j-4].value)
+
+                 b[i][j]=parseFloat(document.matrizb[3*i+j-4].value)    }    }
+
+      for(i=1;i<=3;i++)
+
+       {   for(j=1;j<=3;j++)
+
+              { d[i][j]=0
+
+                     for(k=1;k<=3;k++)
+
+                       {d[i][j]=a[i][j]+b[i][j]  }
+
+                document.matrizd[3*i+j-4].value=d[i][j]  }    }
+
+      }
+
+    </script>
+	</head>
+<body style="text-align: center" text=white   background="img/fondo 2.jpg" bgcolor=black>
+
+<h1>Suma y Resta de  Matrices (3x3) </h1>
+<form name="matriza">
+
+Matriz A=<BR> <input type="text"  size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">     
+
+            <input type="text" size="3">
+
+</form>
+
+<form name="matrizb">
+
+Matriz B=<BR> <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">     
+
+            <input type="text" size="3"> <br>
+            <br>
+            <br>
+
+            <input type="button" value="Resta" onClick=" producto()">
+            <input type="button" value="Suma" onClick=" producto2()">
+              <button href="index.html">Borrar</button>
+               <input type="button" value="Salir" onClick="location.href='Index.html'"> 
+
+</form>
+
+ 
+
+<form name="matrizc" >
+
+Matriz producto C=A-B<BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">     
+
+            <input type="text" size="3">
+
+  </form>
+<form name="matrizd">
+
+Matriz producto C=A+B<BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">
+
+            <input type="text" size="3"><BR>
+
+            <input type="text" size="3">
+
+            <input type="text" size="3">     
+
+            <input type="text" size="3">
+
+  </form>
+ </body>
+
+</html>
